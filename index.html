@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Todolist</title>
+
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="main.js"></script>
+</head>
+<body>
+  <form id="todo-list" class="todo-list">
+    <div class="todo-list-block" id="todo-list-block__add">
+      <h3 class="todo-list-block__name">Add item</h3>
+      <div class="todo-list-block__inner">
+        <input type="text" class="todo-list-block__add-input">
+        <button type="button" class="todo-list-block__add-btn">Add</button>
+      </div>
+    </div>
+    <div class="todo-list-block" id="todo-list-block__todo">
+      <h3 class="todo-list-block__name">To do</h3>
+      <div class="todo-list-block__inner">
+        <div class="todo-list-block__todo-item d-flex">
+          <input type="checkbox" class="todo-list-block__todo-check">
+          <input type="text" class="todo-list-block__todo-task">
+          <button type="button" class="todo-list-block__todo-edit">Edit</button>
+          <button type="button" class="todo-list-block__todo-remove">Remove</button>
+        </div>
+      </div>
+    </div>
+    <div class="todo-list-block" id="todo-list-block__completed">
+      <h3 class="todo-list-block__name">Completed</h3>
+      <div class="todo-list-block__inner">
+        <div class="todo-list-block__completed-item d-flex">
+          <input type="checkbox" class="todo-list-block__completed-check" checked>
+          <input type="text" class="todo-list-block__completed-task" value="Some task" disabled>
+        </div>
+      </div>
+    </div>
+  </form>
+</body>
+</html>
